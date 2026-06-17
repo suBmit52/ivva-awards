@@ -26,7 +26,7 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-black/85 backdrop-blur-xl border-b border-[color:var(--gold)]/20 py-3"
+          ? "bg-[color:var(--surface)]  border-b border-[color:var(--gold)]/20 py-3"
           : "bg-transparent py-5"
       }`}
     >
@@ -69,7 +69,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-[color:var(--gold)]/20 bg-black/95 backdrop-blur-xl">
+        <div className="lg:hidden border-t border-[color:var(--gold)]/20 bg-[color:var(--surface)] ">
           <div className="flex flex-col px-6 py-6">
             {LINKS.map((l) => (
               <Link

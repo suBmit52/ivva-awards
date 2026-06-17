@@ -40,11 +40,11 @@ function NominatePage() {
       <HeroCarousel slides={slides} />
 
       {/* WHY NOMINATE */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-16 text-center">
             <p className="eyebrow mb-5">Why Nominate</p>
-            <h2 className="heading-display text-4xl md:text-5xl text-white">
+            <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">
               Three reasons to <span className="text-gold-gradient italic heading-serif">step forward</span>
             </h2>
           </Reveal>
@@ -57,7 +57,7 @@ function NominatePage() {
               <Reveal key={i} delay={i * 0.1}>
                 <div className="border border-[color:var(--gold)]/30 bg-[color:var(--surface)] p-10 text-center transition-all hover:border-[color:var(--gold)] hover:shadow-[0_20px_60px_-20px_rgba(201,168,76,0.4)]">
                   <x.Icon className="mx-auto text-[color:var(--gold-bright)]" size={36} />
-                  <h3 className="heading-display mt-6 text-2xl text-white">{x.t}</h3>
+                  <h3 className="heading-display mt-6 text-2xl text-[color:var(--ink)]">{x.t}</h3>
                   <p className="mt-4 text-[color:var(--ivory)]/70">{x.d}</p>
                 </div>
               </Reveal>
@@ -69,11 +69,11 @@ function NominatePage() {
       <SectionDivider />
 
       {/* ELIGIBILITY */}
-      <section className="bg-black py-24">
+      <section className="bg-[color:var(--background)] py-24">
         <div className="mx-auto max-w-4xl px-6">
           <Reveal>
             <p className="eyebrow mb-5">Eligibility</p>
-            <h2 className="heading-display text-4xl text-white mb-10">Who can be nominated</h2>
+            <h2 className="heading-display text-4xl text-[color:var(--ink)] mb-10">Who can be nominated</h2>
             <ul className="space-y-4">
               {[
                 "Individuals or organizations from any country, of any age above 18.",
@@ -96,11 +96,11 @@ function NominatePage() {
       <SectionDivider />
 
       {/* FORM */}
-      <section className="bg-black py-24">
+      <section className="bg-[color:var(--background)] py-24">
         <div className="mx-auto max-w-3xl px-6">
           <Reveal className="mb-12 text-center">
             <p className="eyebrow mb-5">Nomination Form</p>
-            <h2 className="heading-display text-4xl md:text-5xl text-white">
+            <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">
               Submit a <span className="text-gold-gradient italic heading-serif">Nomination</span>
             </h2>
           </Reveal>
@@ -121,7 +121,7 @@ function NominatePage() {
                   <Field label="Nominee Full Name" name="name" required />
                   <div>
                     <label className="eyebrow mb-2 block">Award Category</label>
-                    <select required className="w-full border border-[color:var(--gold)]/40 bg-black px-4 py-3 text-[color:var(--ivory)] focus:border-[color:var(--gold-bright)] focus:outline-none">
+                    <select required className="w-full border border-[color:var(--gold)]/40 bg-[color:var(--background)] px-4 py-3 text-[color:var(--ivory)] focus:border-[color:var(--gold-bright)] focus:outline-none">
                       <option value="">Select a category…</option>
                       {orderedAwards.map((a) => (
                         <option key={a.slug} value={a.slug}>
@@ -137,7 +137,7 @@ function NominatePage() {
                     <textarea
                       required
                       rows={5}
-                      className="w-full border border-[color:var(--gold)]/40 bg-black px-4 py-3 text-[color:var(--ivory)] focus:border-[color:var(--gold-bright)] focus:outline-none"
+                      className="w-full border border-[color:var(--gold)]/40 bg-[color:var(--background)] px-4 py-3 text-[color:var(--ivory)] focus:border-[color:var(--gold-bright)] focus:outline-none"
                       placeholder="Tell us why this nominee deserves recognition…"
                     />
                   </div>
@@ -158,25 +158,25 @@ function NominatePage() {
       <SectionDivider />
 
       {/* PROCESS */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal className="mb-16 text-center">
             <p className="eyebrow mb-5">Nomination Process</p>
-            <h2 className="heading-display text-4xl md:text-5xl text-white">From Submission to Stage</h2>
+            <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">From Submission to Stage</h2>
           </Reveal>
           <div className="relative grid gap-12 md:grid-cols-3">
-            <div className="absolute left-0 right-0 top-10 hidden h-px bg-gradient-to-r from-transparent via-[color:var(--gold)] to-transparent md:block" />
+            <div className="absolute left-0 right-0 top-10 hidden h-px     md:block" />
             {[
               { n: "01", t: "Submit", d: "Complete the nomination form with relevant details and supporting context." },
               { n: "02", t: "Review", d: "Our independent jury evaluates each nomination over 30 days." },
               { n: "03", t: "Honour", d: "Laureates are announced and felicitated at the IVVA Annual Gala." },
             ].map((s, i) => (
               <Reveal key={i} delay={i * 0.15}>
-                <div className="relative bg-black text-center">
-                  <div className="mx-auto mb-6 grid h-20 w-20 place-items-center rounded-full border-2 border-[color:var(--gold-bright)] bg-black heading-display text-2xl text-gold-gradient">
+                <div className="relative bg-[color:var(--background)] text-center">
+                  <div className="mx-auto mb-6 grid h-20 w-20 place-items-center rounded-full border-2 border-[color:var(--gold-bright)] bg-[color:var(--background)] heading-display text-2xl text-gold-gradient">
                     {s.n}
                   </div>
-                  <h3 className="heading-display text-2xl text-white">{s.t}</h3>
+                  <h3 className="heading-display text-2xl text-[color:var(--ink)]">{s.t}</h3>
                   <p className="mt-3 text-[color:var(--ivory)]/70">{s.d}</p>
                 </div>
               </Reveal>
@@ -206,7 +206,7 @@ function Field({
         name={name}
         type={type}
         required={required}
-        className="w-full border border-[color:var(--gold)]/40 bg-black px-4 py-3 text-[color:var(--ivory)] focus:border-[color:var(--gold-bright)] focus:outline-none"
+        className="w-full border border-[color:var(--gold)]/40 bg-[color:var(--background)] px-4 py-3 text-[color:var(--ivory)] focus:border-[color:var(--gold-bright)] focus:outline-none"
       />
     </div>
   );

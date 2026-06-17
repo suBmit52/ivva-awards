@@ -24,7 +24,7 @@ export default function HeroCarousel({ slides, children, interval = 5000 }: Prop
   }, [slides.length, interval]);
 
   return (
-    <section className="relative h-screen w-screen overflow-hidden bg-black">
+    <section className="relative h-screen w-screen overflow-hidden bg-[color:var(--background)]">
       <AnimatePresence mode="sync">
         <motion.div
           key={i}
@@ -39,7 +39,7 @@ export default function HeroCarousel({ slides, children, interval = 5000 }: Prop
             alt={slides[i].title}
             className="ken-burns absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black" />
+          <div className="absolute inset-0    " />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.7)_100%)]" />
         </motion.div>
       </AnimatePresence>

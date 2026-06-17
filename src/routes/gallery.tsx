@@ -51,11 +51,11 @@ function GalleryPage() {
       <HeroCarousel slides={slides} />
 
       {/* INSTAGRAM REELS */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-12 text-center">
             <p className="eyebrow mb-5"><Instagram className="mr-1 inline" size={12} /> @ivva.international</p>
-            <h2 className="heading-display text-4xl md:text-6xl text-white">
+            <h2 className="heading-display text-4xl md:text-6xl text-[color:var(--ink)]">
               IVVA on <span className="text-gold-gradient italic heading-serif">Instagram</span>
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-[color:var(--ivory)]/65">
@@ -76,9 +76,9 @@ function GalleryPage() {
                 className="group relative aspect-[9/16] overflow-hidden border border-[color:var(--gold)]/30"
               >
                 <img src={img} alt="" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent" />
+                <div className="absolute inset-0    " />
                 <div className="absolute inset-0 grid place-items-center bg-[color:var(--gold)]/0 transition-all duration-300 group-hover:bg-[color:var(--gold)]/15">
-                  <div className="grid h-14 w-14 place-items-center rounded-full border border-[color:var(--gold-bright)] bg-black/60 opacity-0 backdrop-blur transition-opacity duration-300 group-hover:opacity-100">
+                  <div className="grid h-14 w-14 place-items-center rounded-full border border-[color:var(--gold-bright)] bg-[color:var(--surface)] opacity-0  transition-opacity duration-300 group-hover:opacity-100">
                     <Play className="ml-0.5 text-[color:var(--gold-bright)]" size={20} />
                   </div>
                 </div>
@@ -94,11 +94,11 @@ function GalleryPage() {
       <SectionDivider />
 
       {/* PHOTO MASONRY */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-12">
             <p className="eyebrow mb-5">Photography</p>
-            <h2 className="heading-display text-4xl md:text-6xl text-white">
+            <h2 className="heading-display text-4xl md:text-6xl text-[color:var(--ink)]">
               The <span className="text-gold-gradient italic heading-serif">Photo Archive</span>
             </h2>
           </Reveal>
@@ -114,9 +114,9 @@ function GalleryPage() {
               >
                 <img src={m.src} alt="" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-[color:var(--gold)]/0 transition-all duration-500 group-hover:bg-[color:var(--gold)]/20" />
-                <div className="absolute inset-x-0 bottom-0 translate-y-full bg-gradient-to-t from-black to-transparent p-4 transition-transform duration-500 group-hover:translate-y-0">
+                <div className="absolute inset-x-0 bottom-0 translate-y-full    p-4 transition-transform duration-500 group-hover:translate-y-0">
                   <p className="eyebrow">Frame · 0{i + 1}</p>
-                  <p className="heading-serif mt-1 text-lg italic text-white">A moment of honour</p>
+                  <p className="heading-serif mt-1 text-lg italic text-[color:var(--ink)]">A moment of honour</p>
                 </div>
               </motion.div>
             ))}
@@ -127,11 +127,11 @@ function GalleryPage() {
       <SectionDivider />
 
       {/* VIDEO HIGHLIGHTS */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-12">
             <p className="eyebrow mb-5">Cinematic</p>
-            <h2 className="heading-display text-4xl md:text-6xl text-white">
+            <h2 className="heading-display text-4xl md:text-6xl text-[color:var(--ink)]">
               Video <span className="text-gold-gradient italic heading-serif">Highlights</span>
             </h2>
           </Reveal>
@@ -144,15 +144,15 @@ function GalleryPage() {
                   className="group relative aspect-video w-[420px] shrink-0 overflow-hidden border border-[color:var(--gold)]/30"
                 >
                   <img src={img} alt="" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-black/40" />
+                  <div className="absolute inset-0 bg-[color:var(--surface)]" />
                   <div className="absolute inset-0 grid place-items-center">
-                    <div className="grid h-20 w-20 place-items-center rounded-full border-2 border-[color:var(--gold-bright)] bg-black/40 backdrop-blur transition-all group-hover:scale-110 group-hover:bg-[color:var(--gold)]">
+                    <div className="grid h-20 w-20 place-items-center rounded-full border-2 border-[color:var(--gold-bright)] bg-[color:var(--surface)]  transition-all group-hover:scale-110 group-hover:bg-[color:var(--gold)]">
                       <Play className="ml-1 text-[color:var(--gold-bright)] group-hover:text-black" size={28} />
                     </div>
                   </div>
                   <div className="absolute bottom-5 left-5 right-5">
                     <p className="eyebrow">Ceremony 2024</p>
-                    <p className="heading-display mt-1 text-xl text-white">Highlight Reel — Vol. {i + 1}</p>
+                    <p className="heading-display mt-1 text-xl text-[color:var(--ink)]">Highlight Reel — Vol. {i + 1}</p>
                   </div>
                 </motion.div>
               ))}

@@ -5,9 +5,9 @@ import { AWARDS } from "@/lib/awards";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#050505] text-[color:var(--ivory)]" style={{ minHeight: "60vh" }}>
-      <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-transparent via-[color:var(--gold-bright)] to-transparent" />
-      <div className="absolute inset-x-0 top-[3px] h-12 bg-gradient-to-b from-[color:var(--gold)]/10 to-transparent" />
+    <footer className="relative bg-[color:var(--background)] text-[color:var(--ivory)]" style={{ minHeight: "60vh" }}>
+      <div className="absolute inset-x-0 top-0 h-[3px]    " />
+      <div className="absolute inset-x-0 top-[3px] h-12   " />
 
       <div className="mx-auto max-w-7xl px-6 pt-20 pb-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
@@ -78,7 +78,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="your@email.com"
-                className="flex-1 bg-transparent px-3 py-3 text-xs text-white placeholder:text-white/40 focus:outline-none"
+                className="flex-1 bg-transparent px-3 py-3 text-xs text-[color:var(--ink)] placeholder:text-[color:var(--ink)] focus:outline-none"
               />
               <button className="bg-[color:var(--gold)] px-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-black hover:bg-[color:var(--gold-bright)]">
                 Subscribe

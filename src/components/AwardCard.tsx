@@ -26,7 +26,7 @@ export default function AwardCard({ award, index = 0 }: { award: Award; index?: 
         <AwardIcon size={26} className="text-[color:var(--gold-bright)]" />
       </div>
       <p className="eyebrow mb-3">{award.category}</p>
-      <h3 className="heading-display text-2xl text-white">{award.name.replace("IVVA ", "")}</h3>
+      <h3 className="heading-display text-2xl text-[color:var(--ink)]">{award.name.replace("IVVA ", "")}</h3>
       <p className="mt-4 flex-1 text-sm leading-relaxed text-[color:var(--ivory)]/70 line-clamp-4">
         {award.description}
       </p>
