@@ -16,7 +16,7 @@ import Footer from "@/components/Footer";
 
 function NotFoundComponent() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-black px-4">
+    <div className="flex min-h-screen items-center justify-center bg-[color:var(--background)] px-4">
       <div className="max-w-md text-center">
         <p className="eyebrow mb-4">404</p>
         <h1 className="heading-display text-6xl text-gold-gradient">Not Found</h1>
@@ -37,9 +37,9 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   }, [error]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-black px-4">
+    <div className="flex min-h-screen items-center justify-center bg-[color:var(--background)] px-4">
       <div className="max-w-md text-center">
-        <h1 className="heading-display text-3xl text-white">Something went wrong</h1>
+        <h1 className="heading-display text-3xl text-[color:var(--ink)]">Something went wrong</h1>
         <p className="mt-3 text-sm text-[color:var(--ivory)]/60">Please try again.</p>
         <div className="mt-6 flex justify-center gap-3">
           <button
@@ -108,7 +108,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="relative min-h-screen bg-black text-[color:var(--ivory)]">
+      <div className="relative min-h-screen bg-[color:var(--background)] text-[color:var(--ivory)]">
         <Navbar />
         <main>
           <Outlet />

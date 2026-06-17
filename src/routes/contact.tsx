@@ -34,11 +34,11 @@ function ContactPage() {
       <HeroCarousel slides={slides} />
 
       {/* CONTACT */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-[1.3fr_1fr]">
           <Reveal>
             <p className="eyebrow mb-5">Send Us a Message</p>
-            <h2 className="heading-display text-4xl md:text-5xl text-white">
+            <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">
               We'd love to <span className="text-gold-gradient italic heading-serif">hear from you</span>
             </h2>
             <form
@@ -63,7 +63,7 @@ function ContactPage() {
                     <textarea
                       rows={6}
                       required
-                      className="w-full border border-[color:var(--gold)]/40 bg-black px-4 py-3 text-[color:var(--ivory)] focus:border-[color:var(--gold-bright)] focus:outline-none"
+                      className="w-full border border-[color:var(--gold)]/40 bg-[color:var(--background)] px-4 py-3 text-[color:var(--ivory)] focus:border-[color:var(--gold-bright)] focus:outline-none"
                     />
                   </div>
                   <button type="submit" className="btn-gold w-full">
@@ -85,7 +85,7 @@ function ContactPage() {
                 <div key={c.label} className="border border-[color:var(--gold)]/30 bg-[color:var(--surface)] p-6">
                   <c.Icon className="text-[color:var(--gold-bright)]" size={22} />
                   <p className="eyebrow mt-3">{c.label}</p>
-                  <p className="mt-1 text-white">{c.value}</p>
+                  <p className="mt-1 text-[color:var(--ink)]">{c.value}</p>
                 </div>
               ))}
             </div>
@@ -105,7 +105,7 @@ function ContactPage() {
       <SectionDivider />
 
       {/* MAP PLACEHOLDER */}
-      <section className="bg-black py-16">
+      <section className="bg-[color:var(--cream)] py-16">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <div className="relative aspect-[21/9] overflow-hidden border border-[color:var(--gold)]/30">
@@ -113,13 +113,13 @@ function ContactPage() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "repeating-linear-gradient(45deg, rgba(201,168,76,0.05) 0 2px, transparent 2px 30px), repeating-linear-gradient(-45deg, rgba(201,168,76,0.05) 0 2px, transparent 2px 30px), radial-gradient(ellipse at center, rgba(201,168,76,0.15), transparent 60%), #050505",
+                    "repeating-linear-gradient(45deg, rgba(201,168,76,0.15) 0 2px, transparent 2px 30px), repeating-linear-gradient(-45deg, rgba(155,44,59,0.10) 0 2px, transparent 2px 30px), #fbf6ea",
                 }}
               />
               <div className="absolute inset-0 grid place-items-center">
                 <div className="text-center">
                   <MapPin className="mx-auto text-[color:var(--gold-bright)]" size={48} />
-                  <p className="heading-display mt-4 text-3xl text-white">IVVA Global HQ</p>
+                  <p className="heading-display mt-4 text-3xl text-[color:var(--ink)]">IVVA Global HQ</p>
                   <p className="eyebrow mt-2">Mumbai · India</p>
                 </div>
               </div>
@@ -131,12 +131,12 @@ function ContactPage() {
       <SectionDivider />
 
       {/* PRESS CTA */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--surface)] py-32">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
-            <div className="relative overflow-hidden border-2 border-[color:var(--gold-bright)] bg-gradient-to-r from-[#100b03] via-black to-[#100b03] p-12 text-center md:p-20 gold-pulse">
+            <div className="relative overflow-hidden border-4 border-[color:var(--burgundy)] bg-[color:var(--cream)] p-12 text-center md:p-20 gold-pulse">
               <p className="eyebrow mb-5">For the Press</p>
-              <h2 className="heading-display text-4xl md:text-5xl text-white">
+              <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">
                 Media & <span className="text-gold-gradient italic heading-serif">Press Inquiries</span>
               </h2>
               <p className="mx-auto mt-6 max-w-2xl text-[color:var(--ivory)]/75">
@@ -161,7 +161,7 @@ function Field({ label, name, type = "text", required }: { label: string; name: 
         name={name}
         type={type}
         required={required}
-        className="w-full border border-[color:var(--gold)]/40 bg-black px-4 py-3 text-[color:var(--ivory)] focus:border-[color:var(--gold-bright)] focus:outline-none"
+        className="w-full border border-[color:var(--gold)]/40 bg-[color:var(--background)] px-4 py-3 text-[color:var(--ivory)] focus:border-[color:var(--gold-bright)] focus:outline-none"
       />
     </div>
   );

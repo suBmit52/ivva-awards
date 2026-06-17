@@ -59,7 +59,7 @@ function AboutPage() {
       <HeroCarousel slides={slides} />
 
       {/* VISION */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <Reveal>
             <p className="eyebrow mb-8">Our Vision</p>
@@ -73,11 +73,11 @@ function AboutPage() {
       <SectionDivider />
 
       {/* MISSION */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--cream)] py-32">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <Reveal>
             <p className="eyebrow mb-5">Our Mission</p>
-            <h2 className="heading-display text-4xl md:text-5xl text-white">
+            <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">
               Find them. <span className="text-gold-gradient italic heading-serif">Honour them. Remember them.</span>
             </h2>
             <p className="mt-8 text-lg leading-relaxed text-[color:var(--ivory)]/75">
@@ -90,7 +90,7 @@ function AboutPage() {
           <Reveal delay={0.2}>
             <div className="relative aspect-[4/5] overflow-hidden border border-[color:var(--gold)]/40">
               <img src={g1} alt="Mission" className="h-full w-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+              <div className="absolute inset-0    " />
             </div>
           </Reveal>
         </div>
@@ -99,11 +99,11 @@ function AboutPage() {
       <SectionDivider />
 
       {/* PHILOSOPHY */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--surface)] py-32">
         <div className="mx-auto max-w-3xl px-6">
           <Reveal>
             <p className="eyebrow mb-5">Founding Philosophy</p>
-            <h2 className="heading-display text-4xl md:text-5xl text-white">A Note from the Founders</h2>
+            <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">A Note from the Founders</h2>
             <div className="mt-10 space-y-6 text-lg leading-relaxed text-[color:var(--ivory)]/80">
               <p>The world has no shortage of awards. It has, in our view, a shortage of the courage to give awards properly — to demand verification, to refuse celebrity bias, to honour the unfashionable, to remember the dead, to lift the unseen.</p>
               <p className="heading-serif text-2xl italic text-[color:var(--gold)]">We began the IVVA because somebody had to.</p>
@@ -118,11 +118,11 @@ function AboutPage() {
       <SectionDivider />
 
       {/* JURY */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--sand)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-16 text-center">
             <p className="eyebrow mb-5">The Jury</p>
-            <h2 className="heading-display text-4xl md:text-5xl text-white">
+            <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">
               The <span className="text-gold-gradient italic heading-serif">Advisory Board</span>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-[color:var(--ivory)]/65">
@@ -143,14 +143,14 @@ function AboutPage() {
               <Reveal key={j.n} delay={i * 0.05}>
                 <div className="group">
                   <div className="relative aspect-[3/4] overflow-hidden border border-[color:var(--gold)]/30 bg-[color:var(--surface)]">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--gold)]/15 via-transparent to-black" />
+                    <div className="absolute inset-0    " />
                     <div className="absolute inset-0 grid place-items-center">
                       <p className="heading-display text-7xl text-[color:var(--gold)]/40">
                         {j.n.split(" ").pop()![0]}
                       </p>
                     </div>
                   </div>
-                  <p className="heading-display mt-4 text-lg text-white">{j.n}</p>
+                  <p className="heading-display mt-4 text-lg text-[color:var(--ink)]">{j.n}</p>
                   <p className="eyebrow mt-1">{j.t}</p>
                 </div>
               </Reveal>
@@ -162,11 +162,11 @@ function AboutPage() {
       <SectionDivider />
 
       {/* BY THE NUMBERS */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-16 text-center">
             <p className="eyebrow mb-5">By the Numbers</p>
-            <h2 className="heading-display text-4xl md:text-5xl text-white">A Decade of Distinction</h2>
+            <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">A Decade of Distinction</h2>
           </Reveal>
           <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
             {[
@@ -191,7 +191,7 @@ function AboutPage() {
       <SectionDivider />
 
       {/* MEDIA STRIP */}
-      <section className="bg-black py-24">
+      <section className="bg-[color:var(--cream)] py-24">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-10 text-center">
             <p className="eyebrow">As Featured In</p>
@@ -211,7 +211,7 @@ function AboutPage() {
       {/* PARALLAX BAND */}
       <section className="relative h-[60vh] overflow-hidden">
         <div className="absolute inset-0 bg-fixed bg-center bg-cover" style={{ backgroundImage: `url(${trophyFeature})` }} />
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/60 to-black" />
+        <div className="absolute inset-0    " />
         <div className="relative grid h-full place-items-center px-6 text-center">
           <Reveal>
             <p className="eyebrow mb-5">Ceremony Highlights</p>

@@ -42,11 +42,11 @@ function AwardsPage() {
       <HeroCarousel slides={slides} />
 
       {/* INTRO */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <Reveal>
             <Quote className="mx-auto text-[color:var(--gold)]" size={40} />
-            <p className="heading-serif mt-8 text-3xl md:text-4xl italic leading-relaxed text-white">
+            <p className="heading-serif mt-8 text-3xl md:text-4xl italic leading-relaxed text-[color:var(--ink)]">
               "We do not celebrate success. We celebrate the courage, the integrity, and the relentless pursuit that precede it. The IVVA exists for those who built the bridges that the next generation will walk across."
             </p>
             <p className="eyebrow mt-8">— IVVA Founding Charter</p>
@@ -57,12 +57,12 @@ function AwardsPage() {
       <SectionDivider />
 
       {/* FEATURED — BUSINESS TYCOON */}
-      <section className="relative overflow-hidden bg-black py-32">
+      <section className="relative overflow-hidden bg-[color:var(--cream)] py-32">
         <GoldParticles count={35} />
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <div className="relative border-2 border-[color:var(--gold-bright)] bg-gradient-to-br from-[#100b03] via-black to-[#0d0903] p-10 md:p-20 gold-pulse">
-              <div className="absolute -top-4 left-10 bg-black px-4">
+            <div className="relative border-4 border-[color:var(--burgundy)] bg-[color:var(--cream)] p-10 md:p-20 gold-pulse">
+              <div className="absolute -top-4 left-10 bg-[color:var(--background)] px-4">
                 <p className="eyebrow text-[color:var(--gold-bright)]">★ The Flagship Honour</p>
               </div>
               <div className="grid items-center gap-12 lg:grid-cols-[1.3fr_1fr]">
@@ -97,11 +97,11 @@ function AwardsPage() {
       <SectionDivider />
 
       {/* ALL AWARDS — alternating */}
-      <section className="bg-black py-24">
+      <section className="bg-[color:var(--surface)] py-24">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-20 text-center">
             <p className="eyebrow mb-5">The Complete Honor Roll</p>
-            <h2 className="heading-display text-4xl md:text-6xl text-white">
+            <h2 className="heading-display text-4xl md:text-6xl text-[color:var(--ink)]">
               Every Award. <span className="text-gold-gradient italic heading-serif">Every Story.</span>
             </h2>
           </Reveal>
@@ -116,14 +116,14 @@ function AwardsPage() {
                       alt={a.name}
                       className="h-full w-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+                    <div className="absolute inset-0    " />
                     <div className="absolute bottom-6 left-6 text-7xl heading-display text-gold-gradient opacity-60">
                       0{i + 1}
                     </div>
                   </div>
                   <div>
                     <p className="eyebrow mb-4">{a.category}</p>
-                    <h3 className="heading-display text-4xl md:text-5xl text-white">
+                    <h3 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">
                       {a.name.replace("IVVA ", "")}
                     </h3>
                     <div className="my-6 h-px w-20 bg-[color:var(--gold)]" />
@@ -142,28 +142,28 @@ function AwardsPage() {
       <SectionDivider />
 
       {/* STRUCTURE FLOWCHART */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--sand)] py-32">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal className="mb-16 text-center">
             <p className="eyebrow mb-5">Hierarchy of Honour</p>
-            <h2 className="heading-display text-4xl md:text-5xl text-white">The IVVA Award Structure</h2>
+            <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">The IVVA Award Structure</h2>
           </Reveal>
           <Reveal>
             <div className="relative border border-[color:var(--gold)]/30 bg-[color:var(--surface)] p-10">
               <div className="flex flex-col items-center gap-6">
-                <div className="border border-[color:var(--gold-bright)] bg-black px-10 py-5 text-center gold-pulse">
+                <div className="border border-[color:var(--gold-bright)] bg-[color:var(--background)] px-10 py-5 text-center gold-pulse">
                   <p className="eyebrow text-[color:var(--gold-bright)]">Apex</p>
                   <p className="heading-display mt-2 text-2xl text-gold-gradient">Hall of Fame & Lifetime Achievement</p>
                 </div>
                 <div className="h-10 w-px bg-[color:var(--gold)]/40" />
-                <div className="border border-[color:var(--gold-bright)] bg-black px-10 py-5 text-center">
+                <div className="border border-[color:var(--gold-bright)] bg-[color:var(--background)] px-10 py-5 text-center">
                   <p className="eyebrow text-[color:var(--gold-bright)]">Flagship</p>
                   <p className="heading-display mt-2 text-2xl text-gold-gradient">Business Tycoon Award ★</p>
                 </div>
                 <div className="h-10 w-px bg-[color:var(--gold)]/40" />
                 <div className="grid w-full gap-4 sm:grid-cols-3">
                   {["Legacy", "Nation Builder", "Women Inspiration", "Academic & Research", "Creative Excellence", "Youth Icon"].map((n) => (
-                    <div key={n} className="border border-[color:var(--gold)]/35 bg-black/60 px-4 py-3 text-center text-sm text-[color:var(--ivory)]/85">
+                    <div key={n} className="border border-[color:var(--gold)]/35 bg-[color:var(--surface)] px-4 py-3 text-center text-sm text-[color:var(--ivory)]/85">
                       {n}
                     </div>
                   ))}
@@ -177,23 +177,23 @@ function AwardsPage() {
       <SectionDivider />
 
       {/* PAST LAUREATES */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-12">
             <p className="eyebrow mb-5">Hall of Excellence</p>
-            <h2 className="heading-display text-4xl md:text-5xl text-white">Past Laureates</h2>
+            <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">Past Laureates</h2>
           </Reveal>
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             {Array.from({ length: 8 }).map((_, i) => (
               <Reveal key={i} delay={i * 0.05}>
                 <div className="group relative aspect-[3/4] overflow-hidden border border-[color:var(--gold)]/25 bg-[color:var(--surface)]">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--gold)]/10 to-transparent" />
+                  <div className="absolute inset-0   " />
                   <div className="absolute inset-0 grid place-items-center">
                     <p className="heading-display text-6xl text-[color:var(--gold)]/30">{i + 1}</p>
                   </div>
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black to-transparent p-4">
+                  <div className="absolute inset-x-0 bottom-0    p-4">
                     <p className="eyebrow">Laureate · 2024</p>
-                    <p className="heading-serif mt-1 text-lg italic text-white">Awaiting Disclosure</p>
+                    <p className="heading-serif mt-1 text-lg italic text-[color:var(--ink)]">Awaiting Disclosure</p>
                   </div>
                 </div>
               </Reveal>

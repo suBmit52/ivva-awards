@@ -71,11 +71,11 @@ function HomePage() {
       </HeroCarousel>
 
       {/* ABOUT */}
-      <section className="relative overflow-hidden bg-black py-32">
+      <section className="relative overflow-hidden bg-[color:var(--background)] py-32">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <Reveal>
             <p className="eyebrow mb-5">About IVVA</p>
-            <h2 className="heading-display text-4xl md:text-6xl text-white">
+            <h2 className="heading-display text-4xl md:text-6xl text-[color:var(--ink)]">
               An institution of <span className="text-gold-gradient italic heading-serif">distinction.</span>
             </h2>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-[color:var(--ivory)]/75">
@@ -101,15 +101,15 @@ function HomePage() {
           </Reveal>
           <Reveal delay={0.2} className="relative">
             <div className="relative">
-              <div className="absolute -inset-6 bg-gradient-to-tr from-[color:var(--gold)]/30 via-transparent to-transparent blur-3xl" />
+              <div className="absolute -inset-6     blur-3xl" />
               <img src={trophyFeature} alt="IVVA Trophy" className="relative w-full border border-[color:var(--gold)]/30" />
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 4, repeat: Infinity }}
-                className="absolute -left-8 top-12 hidden md:block border border-[color:var(--gold)]/50 bg-black/80 backdrop-blur-md p-5"
+                className="absolute -left-8 top-12 hidden md:block border border-[color:var(--gold)]/50 bg-[color:var(--surface)]  p-5"
               >
                 <Trophy className="text-[color:var(--gold-bright)]" />
-                <p className="mt-2 heading-display text-2xl text-white">200+</p>
+                <p className="mt-2 heading-display text-2xl text-[color:var(--ink)]">200+</p>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-[color:var(--gold)]">Laureates</p>
               </motion.div>
             </div>
@@ -120,12 +120,12 @@ function HomePage() {
       <SectionDivider />
 
       {/* FEATURED — BUSINESS TYCOON */}
-      <section className="relative overflow-hidden bg-black py-32">
+      <section className="relative overflow-hidden bg-[color:var(--cream)] py-32">
         <GoldParticles count={25} />
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <div className="relative border-2 border-[color:var(--gold-bright)] bg-gradient-to-br from-[#0d0a04] via-black to-[#0a0801] p-10 md:p-20 gold-pulse">
-              <div className="absolute -top-4 left-10 bg-black px-4">
+            <div className="relative border-4 border-[color:var(--burgundy)] bg-[color:var(--cream)] p-10 md:p-20 gold-pulse">
+              <div className="absolute -top-4 left-10 bg-[color:var(--background)] px-4">
                 <p className="eyebrow text-[color:var(--gold-bright)]">★ Featured Award</p>
               </div>
               <div className="grid items-center gap-12 lg:grid-cols-[1.4fr_1fr]">
@@ -134,7 +134,7 @@ function HomePage() {
                   <h2 className="heading-display mt-2 text-5xl md:text-7xl">
                     <span className="text-gold-gradient">Business Tycoon</span>
                   </h2>
-                  <p className="heading-serif mt-2 text-3xl italic text-white/90">Award</p>
+                  <p className="heading-serif mt-2 text-3xl italic text-[color:var(--ink)]">Award</p>
                   <p className="mt-8 max-w-xl text-lg leading-relaxed text-[color:var(--ivory)]/80">
                     Reserved for the titans of industry — visionaries who transformed bold ideas into empires. The IVVA Business Tycoon Award celebrates entrepreneurs who didn't just build businesses, they built legacies that redefined markets, empowered communities, and inspired the next generation of leaders.
                   </p>
@@ -156,11 +156,11 @@ function HomePage() {
       <SectionDivider />
 
       {/* CATEGORIES GRID */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--surface)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-16 text-center">
             <p className="eyebrow mb-5">Nine Honors</p>
-            <h2 className="heading-display text-4xl md:text-6xl text-white">
+            <h2 className="heading-display text-4xl md:text-6xl text-[color:var(--ink)]">
               Awards of <span className="text-gold-gradient italic heading-serif">Distinction</span>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-[color:var(--ivory)]/65">
@@ -176,12 +176,12 @@ function HomePage() {
       <SectionDivider />
 
       {/* INSTAGRAM REELS */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--sand)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-12 flex flex-wrap items-end justify-between gap-6">
             <div>
               <p className="eyebrow mb-5">@ivva.international</p>
-              <h2 className="heading-display text-4xl md:text-6xl text-white">
+              <h2 className="heading-display text-4xl md:text-6xl text-[color:var(--ink)]">
                 Moments of <span className="text-gold-gradient italic heading-serif">Glory</span>
               </h2>
             </div>
@@ -196,14 +196,14 @@ function HomePage() {
                   className="group relative aspect-[9/16] w-[240px] shrink-0 overflow-hidden border border-[color:var(--gold)]/25"
                 >
                   <img src={img} alt="" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+                  <div className="absolute inset-0    " />
                   <div className="absolute inset-0 grid place-items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <div className="grid h-14 w-14 place-items-center rounded-full border border-[color:var(--gold-bright)] bg-black/60 backdrop-blur">
+                    <div className="grid h-14 w-14 place-items-center rounded-full border border-[color:var(--gold-bright)] bg-[color:var(--surface)] ">
                       <Play className="ml-0.5 text-[color:var(--gold-bright)]" size={20} />
                     </div>
                   </div>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <p className="text-xs text-white/90">Ceremony Highlight {i + 1}</p>
+                    <p className="text-xs text-[color:var(--ink)]">Ceremony Highlight {i + 1}</p>
                   </div>
                 </motion.div>
               ))}
@@ -215,11 +215,11 @@ function HomePage() {
       <SectionDivider />
 
       {/* WHY IVVA */}
-      <section className="bg-black py-32">
+      <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-16 text-center">
             <p className="eyebrow mb-5">Why IVVA</p>
-            <h2 className="heading-display text-4xl md:text-6xl text-white">
+            <h2 className="heading-display text-4xl md:text-6xl text-[color:var(--ink)]">
               The mark of <span className="text-gold-gradient italic heading-serif">true honour</span>
             </h2>
           </Reveal>
@@ -242,13 +242,13 @@ function HomePage() {
 
       {/* NOMINATION CTA */}
       <section className="relative overflow-hidden">
-        <div className="relative bg-gradient-to-r from-black via-[#1a1305] to-black py-28">
+        <div className="relative     py-28">
           <GoldParticles count={20} />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(201,168,76,0.15)_0%,transparent_70%)]" />
           <div className="relative mx-auto max-w-5xl px-6 text-center">
             <Reveal>
               <p className="eyebrow mb-5"><Calendar className="mr-2 inline" size={12} /> Nominations Open · Closes Dec 31, 2025</p>
-              <h2 className="heading-display text-5xl md:text-7xl text-white">
+              <h2 className="heading-display text-5xl md:text-7xl text-[color:var(--ink)]">
                 Nominate a <span className="text-gold-gradient italic heading-serif">Visionary</span>
               </h2>
               <p className="mx-auto mt-6 max-w-2xl text-lg text-[color:var(--ivory)]/75">

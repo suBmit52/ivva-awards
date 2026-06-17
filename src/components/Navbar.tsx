@@ -26,10 +26,11 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-black/85 backdrop-blur-xl border-b border-[color:var(--gold)]/20 py-3"
-          : "bg-transparent py-5"
+          ? "bg-[color:var(--surface)] border-b-2 border-[color:var(--burgundy)] py-3"
+          : "bg-[color:var(--cream)] py-5"
       }`}
     >
+
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6">
         <Link to="/" className="flex shrink-0 items-center gap-3">
           <img
@@ -69,7 +70,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-[color:var(--gold)]/20 bg-black/95 backdrop-blur-xl">
+        <div className="lg:hidden border-t border-[color:var(--gold)]/20 bg-[color:var(--surface)] ">
           <div className="flex flex-col px-6 py-6">
             {LINKS.map((l) => (
               <Link
