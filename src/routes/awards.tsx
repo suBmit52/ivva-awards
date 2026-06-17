@@ -61,7 +61,7 @@ function AwardsPage() {
         <GoldParticles count={35} />
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <div className="relative border-2 border-[color:var(--gold-bright)]     p-10 md:p-20 gold-pulse">
+            <div className="relative border-4 border-[color:var(--burgundy)] bg-[color:var(--cream)] p-10 md:p-20 gold-pulse">
               <div className="absolute -top-4 left-10 bg-[color:var(--background)] px-4">
                 <p className="eyebrow text-[color:var(--gold-bright)]">★ The Flagship Honour</p>
               </div>

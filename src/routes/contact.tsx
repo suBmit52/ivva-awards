@@ -134,7 +134,7 @@ function ContactPage() {
       <section className="bg-[color:var(--background)] py-32">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
-            <div className="relative overflow-hidden border-2 border-[color:var(--gold-bright)]     p-12 text-center md:p-20 gold-pulse">
+            <div className="relative overflow-hidden border-4 border-[color:var(--burgundy)] bg-[color:var(--cream)] p-12 text-center md:p-20 gold-pulse">
               <p className="eyebrow mb-5">For the Press</p>
               <h2 className="heading-display text-4xl md:text-5xl text-[color:var(--ink)]">
                 Media & <span className="text-gold-gradient italic heading-serif">Press Inquiries</span>
