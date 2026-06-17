@@ -59,9 +59,10 @@
   --ivory: #2a1a0e;           /* legacy token — repurposed to ink */
   --foreground: #2a1a0e;
 
-  --gold: #c9a84c;            /* champagne gold */
-  --gold-bright: #b8902a;     /* bolder gold for accents */
-  --gold-dim: #8a6f1f;
+  /* Repurposed away from gold — bold jewel tones */
+  --gold: #1e3a8a;            /* sapphire (primary accent) */
+  --gold-bright: #9b2c3b;     /* burgundy (bold accent) */
+  --gold-dim: #1f6f54;        /* emerald (deep accent) */
 
   /* Bold colorful accents */
   --burgundy: #9b2c3b;
