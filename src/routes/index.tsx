@@ -120,7 +120,7 @@ function HomePage() {
       <SectionDivider />
 
       {/* FEATURED — BUSINESS TYCOON */}
-      <section className="relative overflow-hidden bg-[color:var(--background)] py-32">
+      <section className="relative overflow-hidden bg-[color:var(--cream)] py-32">
         <GoldParticles count={25} />
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
@@ -156,7 +156,7 @@ function HomePage() {
       <SectionDivider />
 
       {/* CATEGORIES GRID */}
-      <section className="bg-[color:var(--background)] py-32">
+      <section className="bg-[color:var(--surface)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-16 text-center">
             <p className="eyebrow mb-5">Nine Honors</p>
@@ -176,7 +176,7 @@ function HomePage() {
       <SectionDivider />
 
       {/* INSTAGRAM REELS */}
-      <section className="bg-[color:var(--background)] py-32">
+      <section className="bg-[color:var(--sand)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-12 flex flex-wrap items-end justify-between gap-6">
             <div>

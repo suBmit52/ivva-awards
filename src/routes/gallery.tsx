@@ -94,7 +94,7 @@ function GalleryPage() {
       <SectionDivider />
 
       {/* PHOTO MASONRY */}
-      <section className="bg-[color:var(--background)] py-32">
+      <section className="bg-[color:var(--cream)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-12">
             <p className="eyebrow mb-5">Photography</p>
@@ -127,7 +127,7 @@ function GalleryPage() {
       <SectionDivider />
 
       {/* VIDEO HIGHLIGHTS */}
-      <section className="bg-[color:var(--background)] py-32">
+      <section className="bg-[color:var(--surface)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-12">
             <p className="eyebrow mb-5">Cinematic</p>

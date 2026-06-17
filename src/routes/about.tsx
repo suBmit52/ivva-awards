@@ -73,7 +73,7 @@ function AboutPage() {
       <SectionDivider />
 
       {/* MISSION */}
-      <section className="bg-[color:var(--background)] py-32">
+      <section className="bg-[color:var(--cream)] py-32">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <Reveal>
             <p className="eyebrow mb-5">Our Mission</p>
@@ -99,7 +99,7 @@ function AboutPage() {
       <SectionDivider />
 
       {/* PHILOSOPHY */}
-      <section className="bg-[color:var(--background)] py-32">
+      <section className="bg-[color:var(--surface)] py-32">
         <div className="mx-auto max-w-3xl px-6">
           <Reveal>
             <p className="eyebrow mb-5">Founding Philosophy</p>
@@ -118,7 +118,7 @@ function AboutPage() {
       <SectionDivider />
 
       {/* JURY */}
-      <section className="bg-[color:var(--background)] py-32">
+      <section className="bg-[color:var(--sand)] py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-16 text-center">
             <p className="eyebrow mb-5">The Jury</p>
@@ -191,7 +191,7 @@ function AboutPage() {
       <SectionDivider />
 
       {/* MEDIA STRIP */}
-      <section className="bg-[color:var(--background)] py-24">
+      <section className="bg-[color:var(--cream)] py-24">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mb-10 text-center">
             <p className="eyebrow">As Featured In</p>

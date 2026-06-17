@@ -105,7 +105,7 @@ function ContactPage() {
       <SectionDivider />
 
       {/* MAP PLACEHOLDER */}
-      <section className="bg-[color:var(--background)] py-16">
+      <section className="bg-[color:var(--cream)] py-16">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <div className="relative aspect-[21/9] overflow-hidden border border-[color:var(--gold)]/30">
@@ -131,7 +131,7 @@ function ContactPage() {
       <SectionDivider />
 
       {/* PRESS CTA */}
-      <section className="bg-[color:var(--background)] py-32">
+      <section className="bg-[color:var(--surface)] py-32">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
             <div className="relative overflow-hidden border-4 border-[color:var(--burgundy)] bg-[color:var(--cream)] p-12 text-center md:p-20 gold-pulse">

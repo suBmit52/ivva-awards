@@ -69,7 +69,7 @@ function NominatePage() {
       <SectionDivider />
 
       {/* ELIGIBILITY */}
-      <section className="bg-[color:var(--background)] py-24">
+      <section className="bg-[color:var(--cream)] py-24">
         <div className="mx-auto max-w-4xl px-6">
           <Reveal>
             <p className="eyebrow mb-5">Eligibility</p>
@@ -96,7 +96,7 @@ function NominatePage() {
       <SectionDivider />
 
       {/* FORM */}
-      <section className="bg-[color:var(--background)] py-24">
+      <section className="bg-[color:var(--surface)] py-24">
         <div className="mx-auto max-w-3xl px-6">
           <Reveal className="mb-12 text-center">
             <p className="eyebrow mb-5">Nomination Form</p>
@@ -158,7 +158,7 @@ function NominatePage() {
       <SectionDivider />
 
       {/* PROCESS */}
-      <section className="bg-[color:var(--background)] py-32">
+      <section className="bg-[color:var(--sand)] py-32">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal className="mb-16 text-center">
             <p className="eyebrow mb-5">Nomination Process</p>
