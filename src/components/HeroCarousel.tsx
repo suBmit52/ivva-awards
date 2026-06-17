@@ -39,8 +39,8 @@ export default function HeroCarousel({ slides, children, interval = 5000 }: Prop
             alt={slides[i].title}
             className="ken-burns absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0    " />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.7)_100%)]" />
+          <div className="absolute inset-0 bg-[color:var(--cream)]/55" />
+
         </motion.div>
       </AnimatePresence>
 
