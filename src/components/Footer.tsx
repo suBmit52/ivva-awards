@@ -5,9 +5,10 @@ import { AWARDS } from "@/lib/awards";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[color:var(--background)] text-[color:var(--ivory)]" style={{ minHeight: "60vh" }}>
-      <div className="absolute inset-x-0 top-0 h-[3px]    " />
-      <div className="absolute inset-x-0 top-[3px] h-12   " />
+    <footer className="relative bg-[color:var(--cream)] text-[color:var(--ink)]" style={{ minHeight: "60vh" }}>
+      <div className="absolute inset-x-0 top-0 h-[4px] bg-[color:var(--burgundy)]" />
+      <div className="absolute inset-x-0 top-[4px] h-[3px] bg-[color:var(--gold)]" />
+
 
       <div className="mx-auto max-w-7xl px-6 pt-20 pb-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
