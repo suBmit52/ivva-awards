@@ -113,7 +113,7 @@ function ContactPage() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "repeating-linear-gradient(45deg, rgba(201,168,76,0.05) 0 2px, transparent 2px 30px), repeating-linear-gradient(-45deg, rgba(201,168,76,0.05) 0 2px, transparent 2px 30px), radial-gradient(ellipse at center, rgba(201,168,76,0.15), transparent 60%), #050505",
+                    "repeating-linear-gradient(45deg, rgba(201,168,76,0.15) 0 2px, transparent 2px 30px), repeating-linear-gradient(-45deg, rgba(155,44,59,0.10) 0 2px, transparent 2px 30px), #fbf6ea",
                 }}
               />
               <div className="absolute inset-0 grid place-items-center">
