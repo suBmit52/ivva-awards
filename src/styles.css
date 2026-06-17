@@ -50,10 +50,10 @@
   --radius: 0.25rem;
 
   /* LIGHT, COLORFUL, PREMIUM — no dark theme, no gradients */
-  --background: #fbf6ea;     /* warm ivory cream */
+  --background: #f4f6fb;     /* cool porcelain */
   --surface: #ffffff;         /* pure white cards */
-  --cream: #f5ecd7;           /* deeper cream band */
-  --sand: #ecd9a8;            /* soft sand band */
+  --cream: #eaf2ec;           /* soft mint band */
+  --sand: #e6dcf0;            /* soft lavender band */
 
   --ink: #2a1a0e;             /* deep espresso ink (text) */
   --ivory: #2a1a0e;           /* legacy token — repurposed to ink */
